@@ -1,1 +1,1 @@
-**NOTE:** build/algebruh is a macOS executable.
+⚠️ **NOTE:** build/algebruh is a macOS executable.
