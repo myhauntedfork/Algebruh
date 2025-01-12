@@ -23,4 +23,5 @@ Before diving into **Algebruh**, make sure you've got the following:
 
 1. Clone the repository: `git clone https://github.com/myhauntedfork/Algebruh.git`
 2. Navigate into the directory: `cd Algebruh`
-3. compile and run the program (make sure you have makefile installed): `make` to compile `./build/algebruh` (add `.exe` extension if on windows)
+3. Compile the program: `make`
+4. Run the program: `./build/algebruh` (add `.exe` extension if on windows)
