@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include "include/area.h"
 #include "include/quadratic.h"
+#include "include/stoichiometry.h"
 
 void clearTerminal();
 void backToHome();
@@ -25,6 +26,11 @@ int main() {
                 Quadratic::solveQuadraticEquation();
                 backToHome();
                 break;
+            case 3:
+                clearTerminal();
+                performStoichiometryInteractive();
+                backToHome();
+                break;
             case 0:
                 clearTerminal();
                 return 0;
@@ -37,6 +43,7 @@ void homeDisplay() {
     std::cout << "--- Math Tools ---\n";
     std::cout << "[1] - Geometrey\n";
     std::cout << "[2] - Quadratic\n";
+    std::cout << "[3] - Stoichiometry\n";
     std::cout << "\n[0] - Quit\n";
 }
 
