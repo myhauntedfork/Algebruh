@@ -1,3 +1,9 @@
+ifeq ($(OS),Windows_NT)
+    TARGET = $(BUILD_DIR)/algebruh.exe
+else
+    TARGET = $(BUILD_DIR)/algebruh
+endif
+
 CXX = g++
 CXXFLAGS = -std=c++17 -Iinclude -Wall -Wextra -pedantic
 
@@ -8,8 +14,6 @@ BUILD_DIR = build
 SRCS = main.cpp $(SRC_DIR)/area.cpp $(SRC_DIR)/quadratic.cpp $(SRC_DIR)/stoichiometry.cpp
 
 OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
-
-TARGET = $(BUILD_DIR)/math_tools
 
 all: $(BUILD_DIR) $(TARGET)
 

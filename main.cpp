@@ -40,7 +40,7 @@ int main() {
 }
 
 void homeDisplay() {
-    std::cout << "--- Math Tools ---\n";
+    std::cout << "--- Algebruh ---\n";
     std::cout << "[1] - Geometrey\n";
     std::cout << "[2] - Quadratic\n";
     std::cout << "[3] - Stoichiometry\n";
