@@ -1,13 +1,16 @@
-## Algrbra Header Files
+## Algrbruh Header Files
 
 ### Links
 
-- Math:
-  - Area
-  - Quadratic Equasions
-- Chemistry
-  - Stoichiometry
-- Physics
-- Utils
-  - Conversions
-  - Constants
+- [Math](Math/)
+
+  - [Area](Math/area.h)
+  - [Quadratic Equasions](Math/quadratic.h)
+
+- [Chemistry](Chemistry/)
+
+  - [Stoichiometry](Chemistry/stoichiometry.h)
+
+- [Physics](Physics/)
+
+- [Utils](Utils/)
