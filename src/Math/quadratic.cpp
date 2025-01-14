@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <limits>
-#include "../include/quadratic.h"
+#include "../include/Math/quadratic.h"
 
 void Quadratic::solveQuadraticEquation() {
     double a, b, c;

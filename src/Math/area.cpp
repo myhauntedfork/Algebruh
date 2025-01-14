@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "../include/area.h"
+#include "../include/Math/area.h"
 
 void AreaGeom::calculateRectangleArea() {
     double side1, side2;

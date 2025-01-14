@@ -1,8 +1,8 @@
 #include <iostream>
 #include <cstdlib>
-#include "include/area.h"
-#include "include/quadratic.h"
-#include "include/stoichiometry.h"
+#include "../include/Math/area.h"
+#include "../include/Math/quadratic.h"
+#include "../include/Chemistry/stoichiometry.h"
 
 void clearTerminal();
 void backToHome();

@@ -1,4 +1,4 @@
-#include "../include/stoichiometry.h"
+#include "../include/Chemistry/stoichiometry.h"
 
 const std::unordered_map<std::string, double> predefinedMolarMasses = {
     {"H2", 2.02}, {"O2", 32.00}, {"H2O", 18.02}, {"CO2", 44.01}, 

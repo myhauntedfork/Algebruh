@@ -1,6 +1,6 @@
 # **Algebruh**
 
-_A collection of math tools, written in C++_
+A collection of math tools, written in C++
 
 ## **Introduction**
 
@@ -8,9 +8,9 @@ Welcome to **Algebruh**, the repository that's got your back with a whole toolbo
 
 ### **Features**
 
-- Geometry (Area)
-- Quadratic Equasions
-- Stoichiometry
+- Math
+- Chemistry
+- Physics
 
 ## **Getting Started**
 
