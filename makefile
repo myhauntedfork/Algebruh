@@ -1,7 +1,7 @@
 ifeq ($(OS),Windows_NT)
-    TARGET = $(BUILD_DIR)/algebruh.exe
+    TARGET = $(DIST_DIR)/algebruh.exe
 else
-    TARGET = $(BUILD_DIR)/algebruh
+    TARGET = $(DIST_DIR)/algebruh
 endif
 
 CXX = g++
@@ -11,30 +11,33 @@ SRC_DIR = src
 SRC_MATH_DIR = Math
 SRC_CHEM_DIR = Chemistry
 INCLUDE_DIR = include
-BUILD_DIR = build
+OBJ_DIR = obj
+DIST_DIR = dist
 
-# Correcting paths with slashes after folder variables
+# Correct paths and organize object files in obj folder
 SRCS = $(SRC_DIR)/main.cpp \
        $(SRC_DIR)/$(SRC_MATH_DIR)/area.cpp \
        $(SRC_DIR)/$(SRC_MATH_DIR)/quadratic.cpp \
        $(SRC_DIR)/$(SRC_CHEM_DIR)/stoichiometry.cpp
 
-# Adjusting object file generation to match corrected paths
-OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
+OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
-all: $(BUILD_DIR) $(TARGET)
+all: $(OBJ_DIR) $(DIST_DIR) $(TARGET)
 
-$(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+$(DIST_DIR):
+	mkdir -p $(DIST_DIR)
 
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $@
 
-$(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
-	mkdir -p $(dir $@) # Ensure subdirectories exist
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	mkdir -p $(dir $@) # Ensure subdirectories in obj exist
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -rf $(BUILD_DIR) $(TARGET)
+	rm -rf $(OBJ_DIR) $(DIST_DIR)
 
 .PHONY: all clean
