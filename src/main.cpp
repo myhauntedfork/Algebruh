@@ -40,11 +40,22 @@ int main() {
 }
 
 void homeDisplay() {
-    std::cout << "--- Algebruh ---\n";
-    std::cout << "[1] - Geometrey\n";
-    std::cout << "[2] - Quadratic\n";
-    std::cout << "[3] - Stoichiometry\n";
-    std::cout << "\n[0] - Quit\n";
+    std::cout << "========================\n";
+    std::cout << "        Algebruh\n";
+    std::cout << "========================\n";
+    std::cout << "\n";
+    std::cout << " MATH\n";
+    std::cout << "------------------------\n";
+    std::cout << " [1] Geometrey\n";
+    std::cout << " [2] Quadratic\n";
+    std::cout << "\n";
+    std::cout << " CHEMISTRY\n";
+    std::cout << "------------------------\n";
+    std::cout << " [3] Stoichiometry\n";
+    std::cout << "\n";
+    std::cout << " OTHER\n";
+    std::cout << "------------------------\n";
+    std::cout << " [0] - Quit\n\n";
 }
 
 void backToHome() {

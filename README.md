@@ -16,12 +16,11 @@ Welcome to **Algebruh**, the repository that's got your back with a whole toolbo
 
 Before diving into **Algebruh**, make sure you've got the following:
 
-- Makefile (this one uses g++ compiler)
+- CMake.
 - Basic knowledge of math. But hey, no judgment if you just want to play around!
 
 ### **Installation**
 
 1. Clone the repository: `git clone https://github.com/myhauntedfork/Algebruh.git`
 2. Navigate into the directory: `cd Algebruh`
-3. Compile the program: `make`
-4. Run the program: `./build/algebruh` (add `.exe` extension if on windows)
+3. Compile & run the program: `bash ./scripts/build.sh`
