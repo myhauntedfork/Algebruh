@@ -24,3 +24,4 @@ Before diving into **Algebruh**, make sure you've got the following:
 1. Clone the repository: `git clone https://github.com/myhauntedfork/Algebruh.git`
 2. Navigate into the directory: `cd Algebruh`
 3. Compile & run the program: `bash ./scripts/build.sh`
+   - Replace `bash` with the appropriate shell command for your system if necessary (e.g., sh, zsh, or another shell you use).
