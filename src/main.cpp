@@ -18,7 +18,7 @@ int main() {
         switch (choice) {            
             case 1:
                 clearTerminal();
-                AreaGeom::calculateRectangleArea();
+                calculateRectangleArea();
                 backToHome();
                 break;
             case 2:
