@@ -22,6 +22,7 @@ set(SRCS
     ${SRC_DIR}/Math/area.cpp
     ${SRC_DIR}/Math/quadratic.cpp
     ${SRC_DIR}/Chemistry/stoichiometry.cpp
+    ${SRC_DIR}/Physics/kinematic.cpp
 )
 
 include_directories(${INCLUDE_DIR})

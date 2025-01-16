@@ -3,6 +3,7 @@
 #include "../include/Math/area.h"
 #include "../include/Math/quadratic.h"
 #include "../include/Chemistry/stoichiometry.h"
+#include "../include/Physics/kinematic.h"
 
 void clearTerminal();
 void backToHome();
@@ -31,6 +32,11 @@ int main() {
                 performStoichiometryInteractive();
                 backToHome();
                 break;
+            case 4:
+                clearTerminal();
+                solveKinematicEquasion();
+                backToHome();
+                break;
             case 0:
                 clearTerminal();
                 return 0;
@@ -52,6 +58,10 @@ void homeDisplay() {
     std::cout << " CHEMISTRY\n";
     std::cout << "------------------------\n";
     std::cout << " [3] Stoichiometry\n";
+    std::cout << "\n";
+    std::cout << " PHYSICS\n";
+    std::cout << "------------------------\n";
+    std::cout << " [4] Kinematic Equasion\n";
     std::cout << "\n";
     std::cout << " OTHER\n";
     std::cout << "------------------------\n";
