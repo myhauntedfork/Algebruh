@@ -24,7 +24,7 @@ int main() {
                 break;
             case 2:
                 clearTerminal();
-                Quadratic::solveQuadraticEquation();
+                solveQuadraticEquation();
                 backToHome();
                 break;
             case 3:

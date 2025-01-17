@@ -3,7 +3,7 @@
 #include <limits>
 #include "../include/Math/quadratic.h"
 
-void Quadratic::solveQuadraticEquation() {
+void solveQuadraticEquation() {
     double a, b, c;
     std::cout << "Enter coefficients a, b, and c (separated by spaces): ";
     std::cin >> a >> b >> c;
