@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/Physics/kinematic.h"
+#include "../include/Physics/physics.h"
 
 void solveKinematicEquasion() {
     double u, a, t, v;

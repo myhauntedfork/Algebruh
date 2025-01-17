@@ -2,5 +2,6 @@
 #define KINEMATIC_H
 
 void solveKinematicEquasion();
+void calculateGravitationalForce();
 
 #endif

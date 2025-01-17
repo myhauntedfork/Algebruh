@@ -3,7 +3,7 @@
 #include "../include/Math/area.h"
 #include "../include/Math/quadratic.h"
 #include "../include/Chemistry/stoichiometry.h"
-#include "../include/Physics/kinematic.h"
+#include "../include/Physics/physics.h"
 
 void clearTerminal();
 void backToHome();
@@ -37,6 +37,11 @@ int main() {
                 solveKinematicEquasion();
                 backToHome();
                 break;
+            case 5:
+                clearTerminal();
+                calculateGravitationalForce();
+                backToHome();
+                break;
             case 0:
                 clearTerminal();
                 return 0;
@@ -62,6 +67,7 @@ void homeDisplay() {
     std::cout << " PHYSICS\n";
     std::cout << "------------------------\n";
     std::cout << " [4] Kinematic Equasion\n";
+    std::cout << " [5] Gravitational Force\n";
     std::cout << "\n";
     std::cout << " OTHER\n";
     std::cout << "------------------------\n";

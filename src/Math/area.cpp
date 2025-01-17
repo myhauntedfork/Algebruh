@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "../include/Math/area.h"
+#include "../include/Utils/constants.h"
 
 void calculateRectangleArea() {
     double side1, side2;
@@ -13,7 +14,7 @@ void calculateCircleArea() {
     double radius;
     std::cout << "Enter length of diameter: ";
     std::cin >> radius;
-    std::cout << "Answer: " << pow(radius, 2) * 3.14159 << '\n';
+    std::cout << "Answer: " << pow(radius, 2) * PI << '\n';
 }
 
 void calculateTriangleArea() {
