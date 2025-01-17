@@ -7,6 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(SRC_DIR src)
+set(MATH_DIR Math)
+set(CHEM_DIR Chemistry)
+set(PHYSICS_DIR Physics)
 set(INCLUDE_DIR include)
 set(BUILD_DIR ${CMAKE_BINARY_DIR})
 set(DIST_DIR ${CMAKE_BINARY_DIR}/dist)
@@ -19,11 +22,11 @@ endif()
 
 set(SRCS
     ${SRC_DIR}/main.cpp
-    ${SRC_DIR}/Math/area.cpp
-    ${SRC_DIR}/Math/quadratic.cpp
-    ${SRC_DIR}/Chemistry/stoichiometry.cpp
-    ${SRC_DIR}/Physics/kinematic.cpp
-    ${SRC_DIR}/Physics/gravity.cpp
+    ${SRC_DIR}/${MATH_DIR}/area.cpp
+    ${SRC_DIR}/${MATH_DIR}/quadratic.cpp
+    ${SRC_DIR}/${CHEM_DIR}/stoichiometry.cpp
+    ${SRC_DIR}/${PHYSICS_DIR}/kinematic.cpp
+    ${SRC_DIR}/${PHYSICS_DIR}/gravity.cpp
 )
 
 include_directories(${INCLUDE_DIR})
