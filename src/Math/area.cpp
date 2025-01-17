@@ -31,3 +31,29 @@ void calculateRectangularPrismArea() {
     std::cout << "Answer: " << 2 * (width * length + length * height + width * height) << '\n';
 }
 
+void chooseAreaType() {
+    int choice;
+    std::cout << "Choose area type:\n";
+    std::cout << "[1] Rectangle\n";
+    std::cout << "[2] Circle\n";
+    std::cout << "[3] Triangle\n";
+    std::cout << "[4] Rectangular Prism\n";
+    std::cout << ">> ";
+    std::cin >> choice;
+    switch (choice) {
+        case 1:
+            calculateRectangleArea();
+            break;
+        case 2:
+            calculateCircleArea();
+            break;
+        case 3:
+            calculateTriangleArea();
+            break;
+        case 4:
+            calculateRectangularPrismArea();
+            break;
+        default:
+            std::cout << "Invalid choice.\n";
+    }
+}

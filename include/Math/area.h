@@ -5,5 +5,6 @@ void calculateRectangleArea();
 void calculateCircleArea();
 void calculateTriangleArea();
 void calculateRectangularPrismArea();
+void chooseAreaType();
 
 #endif

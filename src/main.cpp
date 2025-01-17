@@ -19,7 +19,7 @@ int main() {
         switch (choice) {            
             case 1:
                 clearTerminal();
-                calculateRectangleArea();
+                chooseAreaType();
                 backToHome();
                 break;
             case 2:
