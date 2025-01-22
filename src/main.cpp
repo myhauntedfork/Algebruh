@@ -21,7 +21,7 @@ int main() {
         homeDisplay();
         std::cout << ">> ";
         std::cin >> choice;
-        switch (choice) {            
+        switch (choice) {
             case 1:
                 clearTerminal();
                 mathOptions();
@@ -67,7 +67,7 @@ void startupDisplay() {
         homeDisplay();
     } else {
         exit(0);
-    }                                                          
+    }
 }
 
 void homeDisplay() {
@@ -88,7 +88,7 @@ void backToHome() {
 void clearTerminal() {
     #ifdef _WIN32
         system("cls");
-    #else 
+    #else
         system("clear");
     #endif
 }
